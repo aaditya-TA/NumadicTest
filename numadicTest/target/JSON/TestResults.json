@@ -1,0 +1,903 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 28,
+        "name": "Test Create a New Load functionality of New Loads after entering all the valid inputs",
+        "description": "",
+        "id": "newloads-functionality-tc-01;test-create-a-new-load-functionality-of-new-loads-after-entering-all-the-valid-inputs;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 788600,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.killBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5764384100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Initialize the browser with chrome",
+            "match": {
+              "location": "Steps.initializeTheBrowserWithChrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5001403000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigate to \"https://app.newloads.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.newloads.com/login",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.userNavigateTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2492811200,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters 9004207961 and clicks on Send Otp",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9004207961",
+                  "offset": 12
+                }
+              ],
+              "location": "Steps.userEntersMobileNoAndClicksOnSendOtp(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2389676000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters 901388 and clicks on next",
+            "match": {
+              "arguments": [
+                {
+                  "val": "901388",
+                  "offset": 12
+                }
+              ],
+              "location": "Steps.userEntersOTPAndClicksOnNext(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 13775815400,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is logged into the system",
+            "match": {
+              "location": "Steps.userIsLoggedIntoTheSystem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 747485600,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on PostLoads button",
+            "match": {
+              "location": "Steps.userClicksOnPostLoadsButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1211581300,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selects Create a new bulk option",
+            "match": {
+              "location": "Steps.selectsCreateANewBulkOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 101255700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "\"Post a load\" layer is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Post a load",
+                  "offset": 1
+                }
+              ],
+              "location": "Steps.layerIsDisplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4466638300,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User enters Mumbai location and selects from the dropdown",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mumbai",
+                  "offset": 12
+                }
+              ],
+              "location": "Steps.userEntersPickupLocation(String)"
+            },
+            "matchedColumns": [
+              2
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4285720700,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "enters Delhi location and does the same",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Delhi",
+                  "offset": 7
+                }
+              ],
+              "location": "Steps.entersDropOffLocationAndDoesTheSame(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 797802100,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Select Tanker",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Tanker",
+                  "offset": 7
+                }
+              ],
+              "location": "Steps.selectVehicleType(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 882240200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Selects Pickup date and Drop off date",
+            "match": {
+              "location": "Steps.selectsPickupDateAndDropOffDate()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 271151800,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Selects Material type and enter 50",
+            "match": {
+              "arguments": [
+                {
+                  "val": "50",
+                  "offset": 32
+                }
+              ],
+              "location": "Steps.selectsMaterialTypeAndEnterConsignmentDate(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 138222400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "Clicks On Continue Button",
+            "match": {
+              "location": "Steps.clicksOnContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 191936000,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Selects the Vehicle Insurance Checkbox and enters the 12 in the corresponding field",
+            "match": {
+              "arguments": [
+                {
+                  "val": "12",
+                  "offset": 54
+                }
+              ],
+              "location": "Steps.selectsTheVehicleInsuranceCheckboxAndEntersTheVehicleNumberInTheCorrespondingField(String)"
+            },
+            "matchedColumns": [
+              6
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 183170400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "clicks on Post Load button",
+            "match": {
+              "location": "Steps.clicksOnPostLoadButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1326464800,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "Success Messsage \"Load posted successfully\" is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Load posted successfully",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.successMesssageIsDisplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 968151100,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User closes the browser",
+            "match": {
+              "location": "Steps.userClosesTheBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "NewLoads functionality_TC_01",
+    "description": "Verify  \"Create a New Load functionality\" for New Loads.",
+    "id": "newloads-functionality-tc-01",
+    "keyword": "Feature",
+    "uri": "PostLoads_TC_01.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 22,
+        "name": "Test Create a New Load functionality of New Loads with keeping all the fields blank",
+        "description": "",
+        "id": "newloads-functionality-tc-02;test-create-a-new-load-functionality-of-new-loads-with-keeping-all-the-fields-blank;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1662660300,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.killBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3399311400,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Initialize the browser with chrome",
+            "match": {
+              "location": "Steps.initializeTheBrowserWithChrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4526345000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigate to \"https://app.newloads.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.newloads.com/login",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.userNavigateTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2316816400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters 9004207961 and clicks on Send Otp",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9004207961",
+                  "offset": 12
+                }
+              ],
+              "location": "Steps.userEntersMobileNoAndClicksOnSendOtp(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2130222100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters 901388 and clicks on next",
+            "match": {
+              "arguments": [
+                {
+                  "val": "901388",
+                  "offset": 12
+                }
+              ],
+              "location": "Steps.userEntersOTPAndClicksOnNext(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15579390300,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is logged into the system",
+            "match": {
+              "location": "Steps.userIsLoggedIntoTheSystem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 339818400,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on PostLoads button",
+            "match": {
+              "location": "Steps.userClicksOnPostLoadsButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1228683100,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selects Create a new bulk option",
+            "match": {
+              "location": "Steps.selectsCreateANewBulkOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 105853600,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "\"Post a load\" layer is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Post a load",
+                  "offset": 1
+                }
+              ],
+              "location": "Steps.layerIsDisplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 118700,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User does not enter any values in the fields",
+            "match": {
+              "location": "Steps.userDoesNotEnterAnyValuesInTheFields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 128239200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Clicks On Continue Button",
+            "match": {
+              "location": "Steps.clicksOnContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10239136300,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[text()\u003d\u0027Select a Vehicle Type\u0027]\"}\n  (Session info: chrome\u003d98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LIN19002782\u0027, ip: \u0027192.168.1.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [56c289d5a7e21b6ee532b0e3c8d89242, findElement {using\u003dxpath, value\u003d//div[text()\u003d\u0027Select a Vehicle Type\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\aditypan\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64012}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64012/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 56c289d5a7e21b6ee532b0e3c8d89242\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy31.isDisplayed(Unknown Source)\r\n\tat step_definitions.Steps.theMandatoryFieldsWillHaveErrorsDisplayedForThem(Steps.java:243)\r\n\tat ✽.Then The mandatory fields will have errors displayed for them(PostLoads_TC_02.feature:16)\r\n",
+              "status": "failed"
+            },
+            "line": 16,
+            "name": "The mandatory fields will have errors displayed for them",
+            "match": {
+              "location": "Steps.theMandatoryFieldsWillHaveErrorsDisplayedForThem()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 17,
+            "name": "User closes the browser",
+            "match": {
+              "location": "Steps.userClosesTheBrowser()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "NewLoads functionality_TC_02",
+    "description": "Verify  \"Create a New Load functionality\" for New Loads.",
+    "id": "newloads-functionality-tc-02",
+    "keyword": "Feature",
+    "uri": "PostLoads_TC_02.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 31,
+        "name": "Test Create a New Load functionality with different combinations",
+        "description": "",
+        "id": "newloads-functionality-tc-03;test-create-a-new-load-functionality-with-different-combinations;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1136655200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Steps.killBrowser(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2376014600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Initialize the browser with chrome",
+            "match": {
+              "location": "Steps.initializeTheBrowserWithChrome()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3748071900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "User navigate to \"https://app.newloads.com/login\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "https://app.newloads.com/login",
+                  "offset": 18
+                }
+              ],
+              "location": "Steps.userNavigateTo(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2386136300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "User enters 9004207961 and clicks on Send Otp",
+            "match": {
+              "arguments": [
+                {
+                  "val": "9004207961",
+                  "offset": 12
+                }
+              ],
+              "location": "Steps.userEntersMobileNoAndClicksOnSendOtp(String)"
+            },
+            "matchedColumns": [
+              1
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2138670700,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "User enters 901388 and clicks on next",
+            "match": {
+              "arguments": [
+                {
+                  "val": "901388",
+                  "offset": 12
+                }
+              ],
+              "location": "Steps.userEntersOTPAndClicksOnNext(String)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12874632800,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "User is logged into the system",
+            "match": {
+              "location": "Steps.userIsLoggedIntoTheSystem()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 681021000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User clicks on PostLoads button",
+            "match": {
+              "location": "Steps.userClicksOnPostLoadsButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1301303400,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "selects Create a new bulk option",
+            "match": {
+              "location": "Steps.selectsCreateANewBulkOption()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 253906800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "\"Post a load\" layer is displayed",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Post a load",
+                  "offset": 1
+                }
+              ],
+              "location": "Steps.layerIsDisplayed(String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5727099400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "User leaves Pickup location empty and fills the Delhi,50,etc",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Delhi",
+                  "offset": 48
+                },
+                {
+                  "val": "50",
+                  "offset": 54
+                }
+              ],
+              "location": "Steps.userLeavesPickupLocationEmptyAndFillsTheOtherFields(String,String)"
+            },
+            "matchedColumns": [
+              3,
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83890900,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "Clicks On Continue Button",
+            "match": {
+              "location": "Steps.clicksOnContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50577600,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "The pickup field field will have errors displayed for them",
+            "match": {
+              "location": "Steps.thePickupFieldFieldWillHaveErrorsDisplayedForThem()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3312516500,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User leaves Drop Off location empty and fills the Mumbai,50,etc",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mumbai",
+                  "offset": 50
+                },
+                {
+                  "val": "50",
+                  "offset": 57
+                }
+              ],
+              "location": "Steps.userLeavesDropOffLocationEmptyAndFillsThePickupConsignmentWeightEtc(String,String)"
+            },
+            "matchedColumns": [
+              2,
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85716100,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "Clicks On Continue Button",
+            "match": {
+              "location": "Steps.clicksOnContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 46024000,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "The drop off field field will have error displayed for them",
+            "match": {
+              "location": "Steps.thedropoffFieldFieldWillHaveErrorsDisplayedForThem()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3245677900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "User leaves Pickup date and Drop date field empty and fills the Mumbai, Delhi,50,etc",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mumbai",
+                  "offset": 64
+                },
+                {
+                  "val": "Delhi",
+                  "offset": 72
+                },
+                {
+                  "val": "50",
+                  "offset": 78
+                }
+              ],
+              "location": "Steps.userLeavesPickupDateAndDropDateFieldEmptyAndFillsThePickupDropOffConsignmentWeightEtc(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90226400,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "Clicks On Continue Button",
+            "match": {
+              "location": "Steps.clicksOnContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 50292000,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "The pickup and drop off date field will have error displayed for them",
+            "match": {
+              "location": "Steps.thePickupAndDropOffDateFieldWillHaveErrorDisplayedForThem()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 446606900,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "User leaves Vehicle field empty and fills the Mumbai, Delhi,50,etc",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Mumbai",
+                  "offset": 46
+                },
+                {
+                  "val": "Delhi",
+                  "offset": 54
+                },
+                {
+                  "val": "50",
+                  "offset": 60
+                }
+              ],
+              "location": "Steps.userLeavesVehicleFieldEmptyAndFillsThePickupDropOffConsignmentWeightEtc(String,String,String)"
+            },
+            "matchedColumns": [
+              2,
+              3,
+              5
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 147451300,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "Clicks On Continue Button",
+            "match": {
+              "location": "Steps.clicksOnContinueButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10014781700,
+              "error_message": "org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {\"method\":\"xpath\",\"selector\":\"//div[text()\u003d\u0027Select a Vehicle Type\u0027]\"}\n  (Session info: chrome\u003d98.0.4758.102)\nFor documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element\nBuild info: version: \u00274.0.0\u0027, revision: \u00273a21814679\u0027\nSystem info: host: \u0027LIN19002782\u0027, ip: \u0027192.168.1.5\u0027, os.name: \u0027Windows 10\u0027, os.arch: \u0027amd64\u0027, os.version: \u002710.0\u0027, java.version: \u002713.0.9\u0027\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCommand: [5d106ccd152e72d1f12b9453f8ffda3d, findElement {using\u003dxpath, value\u003d//div[text()\u003d\u0027Select a Vehicle Type\u0027]}]\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.102, chrome: {chromedriverVersion: 98.0.4758.102 (273bf7ac8c90..., userDataDir: C:\\Users\\aditypan\\AppData\\L...}, goog:chromeOptions: {debuggerAddress: localhost:64101}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:64101/devtoo..., se:cdpVersion: 98.0.4758.102, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 5d106ccd152e72d1f12b9453f8ffda3d\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)\r\n\tat java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)\r\n\tat java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)\r\n\tat java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)\r\n\tat java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)\r\n\tat org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)\r\n\tat org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)\r\n\tat org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)\r\n\tat org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)\r\n\tat org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)\r\n\tat org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)\r\n\tat org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)\r\n\tat org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)\r\n\tat com.sun.proxy.$Proxy31.isDisplayed(Unknown Source)\r\n\tat step_definitions.Steps.theVehicleTypeFieldWillHaveErrorDisplayedForThem(Steps.java:344)\r\n\tat ✽.Then The vehicle type field will have error displayed for them(PostLoads_TC_03.feature:25)\r\n",
+              "status": "failed"
+            },
+            "line": 25,
+            "name": "The vehicle type field will have error displayed for them",
+            "match": {
+              "location": "Steps.theVehicleTypeFieldWillHaveErrorDisplayedForThem()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "NewLoads functionality_TC_03",
+    "description": "Verify  \"Create a New Load functionality\" for New Loads.",
+    "id": "newloads-functionality-tc-03",
+    "keyword": "Feature",
+    "uri": "PostLoads_TC_03.feature"
+  }
+]
