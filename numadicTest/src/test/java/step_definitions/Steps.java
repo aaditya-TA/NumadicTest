@@ -38,7 +38,6 @@ public class Steps extends Base {
     LoginPage loginPageObj;
     LoadPage loadPageObj;
     SoftAssert assertion ;
-    ExtentTest test;
 
 
 

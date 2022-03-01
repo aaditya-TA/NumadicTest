@@ -4,13 +4,8 @@ package cucumberOptions;
 import com.cucumber.listener.Reporter;
 
 import cucumber.api.CucumberOptions;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
 import cucumber.api.testng.AbstractTestNGCucumberTests;
 import org.junit.AfterClass;
-import org.junit.runner.RunWith;
-
-
 import java.io.File;
 
 
